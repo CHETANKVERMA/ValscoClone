@@ -1,0 +1,741 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  /* overflow prop --> way to remove any horizontal scroll on page */
+}
+
+/*preloader animation*/
+/* #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loading-animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  color: #fff;
+  font-size: 5vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0;
+  transform-style: preserve-3d;
+  animation: letterAnimation 4s ease-in-out infinite;
+}
+
+@keyframes letterAnimation {
+  0% {
+    opacity: 0;
+    transform: translateZ(-100px) rotateY(180deg);
+  }
+  30% {
+    opacity: 1;
+    transform: translateZ(0) rotateY(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(100px) rotateY(-180deg);
+  }
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+.letter:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.letter:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.letter:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.letter:nth-child(5) {
+  animation-delay: 1.6s;
+}
+.letter:nth-child(6) {
+  animation-delay: 2s;
+}
+
+.attribution {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+} */
+
+.navbar {
+  display: flex;
+  padding: 40px 60px 40px 60px;
+  align-items: center;
+
+  gap: 40px;
+  background-color: whitesmoke;
+}
+.navbar h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #212529;
+}
+.navbarButtons {
+  display: flex;
+  gap: 10px;
+  margin-left: 600px;
+}
+.navbarButtons button {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  color: #212529;
+}
+.navbarButtons button:hover {
+  background-color: #007bff;
+  border-radius: 30px;
+  color: white;
+  transition: 0.3s;
+}
+.AboutValsco {
+  background-image: linear-gradient(
+    to bottom,
+    #2c73d2,
+    #7c92dd,
+    #afb4e8,
+    #d9d8f3,
+    #ffffff
+  );
+  display: flex;
+  justify-content: center;
+  padding: 160px 280px;
+  gap: 150px;
+}
+.AboutHead {
+  display: flex;
+  flex-direction: column;
+  /* width: 400px; */
+  padding-top: 80px;
+}
+.AboutHead p {
+  width: 450px;
+}
+#logoOnPage {
+  height: 300px;
+  width: 450px;
+}
+.doGreatLogo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* to center the image we allowed the image container to have 100% image then we 
+  centered it using flex*/
+}
+
+.AboutValsco h1 {
+  color: #212529;
+  color: RGB(33, 37, 41);
+  font-size: 64px;
+}
+
+.AboutValsco p {
+  color: #212529;
+}
+#img2 {
+  width: 190vh;
+}
+
+/* #img2-centre {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+} */
+
+#img3 {
+  width: 170vh;
+  display: flex;
+  justify-content: center;
+}
+.img-phone-display {
+  display: flex;
+  justify-content: center;
+}
+.cardOfBlogs {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px;
+}
+
+.card h2:hover {
+  text-decoration: underline;
+}
+.blogButtons {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  width: 100px;
+  color: white;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to bottom,
+    #073397,
+    #0d47b0,
+    #0f5bca,
+    #0e70e5,
+    #0686ff
+  );
+}
+.blogButtons:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    #fffdfd,
+    #f2f1f1,
+    #e5e4e5,
+    #d8d8d8,
+    #cccccc
+  );
+  border: 1px solid green;
+  color: black;
+}
+
+#aboutPic {
+  height: 500px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 90px;
+  color: #212529;
+}
+.aboutUs h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.aboutUs h1 {
+  display: inline-block;
+  position: relative;
+  color: #212529;
+}
+
+.aboutUs h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.aboutUs h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#aboutPic {
+  padding: 20px;
+  width: 600px;
+  box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.5);
+  margin: 60px;
+}
+.outerAboutSection {
+  display: flex;
+  gap: 90px;
+}
+
+.innerAboutSection {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  gap: 15px;
+  padding-top: 45px;
+  margin-top: 80px;
+}
+
+.innerAboutSection h2,
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  text-align: left;
+}
+.foundersDescription {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.cardForFounders {
+  width: 500px;
+  padding-top: 60px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #212529;
+  gap: 15px;
+  padding: 30px;
+}
+.cardForFounders h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.cardForFounders h3,
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.cardForFounders img {
+  border-radius: 50%;
+}
+.cardForFounders img:hover {
+  transition: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.foundersCardBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #212529;
+  gap: 15px;
+  padding: 20px;
+}
+
+.foundersCardBox:hover {
+  transition: 0.6s;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 15px;
+}
+.footer {
+  background-color: black;
+}
+.content h2 {
+  font-size: 122.88px;
+  color: #c0c0c0;
+  font-weight: 400;
+  line-height: 110.592px;
+}
+.footer {
+  background-color: black;
+}
+
+.footerHeadings {
+  color: #c0c0c0;
+  font-size: 72.88px;
+  font-weight: 100;
+  padding: 70px;
+}
+
+.footerHeadings h2 {
+  font-weight: 100;
+}
+.footerParagraph {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  width: 950px;
+  gap: 50px;
+}
+.footerParagraph p {
+  color: #c0c0c0;
+}
+
+form {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 500px;
+}
+form .contact-us-headline {
+  color: #c0c0c0;
+  font-size: 50px;
+  font-weight: 450;
+  position: relative;
+  display: inline-block;
+}
+form .contact-us-headline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c0c0c0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+form .contact-us-headline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+form .formHeadings h4 {
+  color: #c0c0c0;
+  font-weight: 100;
+}
+.formHeadings {
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formHeadings input {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  border: 1px solid white;
+  color: #c0c0c0;
+  outline: none;
+}
+.formHeadings input:focus {
+  border-color: #3130d2;
+}
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+.submitButton button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right top,
+    #0c0541,
+    #141062,
+    #1e1a86,
+    #2825ab,
+    #3130d2
+  );
+  color: #c0c0c0;
+}
+
+.submitButton button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #05255a,
+    #122048,
+    #161c36,
+    #161726,
+    #131316
+  );
+  cursor: pointer;
+}
+#submitButtonForForm {
+  width: 400px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #c0c0c0;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.8s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.haveIdeaTagLine {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 600px;
+  gap: 50px;
+}
+.haveIdeaTagLine h5 {
+  font-size: 80px;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.haveIdeaTagLine h6 {
+  font-size: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.addressFooter {
+  color: #c0c0c0;
+  padding: 40px;
+}
+.footerIcons {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 10px 40px;
+  gap: 10px;
+  position: relative; /* Add this line to establish a positioning context */
+}
+
+.footerIcons h6 {
+  color: #c0c0c0;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.flexIconsFooter {
+  display: flex;
+  gap: 15px;
+  overflow: hidden; /* Add this line to hide the overflow */
+}
+
+.icon-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  padding: 5px;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+  position: relative; /* Add this line to establish a positioning context */
+  z-index: 1; /* Add this line to ensure the hovered icon appears above others */
+}
+
+.flexIconsFooter img {
+  width: 50px;
+  display: block;
+}
+
+/*Responsive styles*/
+
+@media screen and (max-width: 1200px) {
+  .navbarButtons {
+    margin-left: auto;
+  }
+
+  .AboutValsco {
+    padding: 120px 200px;
+  }
+
+  #img2 {
+    width: 100%;
+  }
+
+  #img3 {
+    width: 100%;
+  }
+
+  .cardOfBlogs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .outerAboutSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  #aboutPic {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .innerAboutSection {
+    width: 100%;
+    max-width: 550px;
+    margin-top: 40px;
+  }
+
+  .foundersDescription {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cardForFounders {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .footerParagraph {
+    width: 100%;
+    max-width: 950px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .haveIdeaTagLine {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .navbarButtons {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .AboutValsco {
+    flex-direction: column;
+    padding: 80px 40px;
+    gap: 40px;
+  }
+
+  #logoOnPage {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .AboutHead {
+    padding-top: 40px;
+  }
+
+  .AboutHead p {
+    width: 100%;
+  }
+
+  .footerHeadings {
+    font-size: 48px;
+    padding: 40px;
+  }
+
+  .footerParagraph {
+    padding: 40px;
+  }
+
+  form {
+    padding: 40px;
+  }
+
+  .haveIdeaTagLine h5 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar h2 {
+    font-size: 24px;
+  }
+
+  .navbarButtons button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .AboutValsco h1 {
+    font-size: 48px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .foundersDescription {
+    gap: 10px;
+  }
+
+  .cardForFounders {
+    margin: 20px;
+  }
+
+  .footerHeadings {
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .footerParagraph {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  form .contact-us-headline {
+    font-size: 36px;
+  }
+
+  .formHeadings {
+    font-size: large;
+  }
+
+  #submitButtonForForm {
+    width: 100%;
+  }
+
+  .haveIdeaTagLine h5 {
+    font-size: 48px;
+  }
+}
