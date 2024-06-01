@@ -624,16 +624,47 @@ form .formHeadings h4 {
   .footerParagraph {
     width: 100%;
     max-width: 950px;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   form {
     width: 100%;
     max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .haveIdeaTagLine {
     width: 100%;
     max-width: 600px;
+    padding: 20px; /* Add padding for consistent spacing */
+  }
+
+  .formHeadings input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .submitButton button {
+    width: 100%;
+  }
+
+  .addressFooter {
+    padding: 20px; /* Add padding for consistent spacing */
+  }
+
+  .footerIcons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px; /* Add padding for consistent spacing */
+    box-sizing: border-box; /* Ensure padding is included in the element's width and height */
+  }
+
+  .flexIconsFooter {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
@@ -669,21 +700,65 @@ form .formHeadings h4 {
     width: 100%;
   }
 
-  .footerHeadings {
-    font-size: 48px;
-    padding: 40px;
+  .outerAboutSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  #aboutPic {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .innerAboutSection {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  form {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  form .contact-us-headline {
+    font-size: 24px;
+  }
+
+  .formHeadings {
+    font-size: 16px;
   }
 
   .footerParagraph {
     padding: 40px;
+    box-sizing: border-box;
   }
 
-  form {
-    padding: 40px;
+  .footerIcons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .flexIconsFooter {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .haveIdeaTagLine h5 {
     font-size: 60px;
+  }
+
+  .haveIdeaTagLine {
+    padding: 20px; /* Add padding for consistent spacing */
+  }
+
+  .addressFooter {
+    padding: 20px; /* Add padding for consistent spacing */
   }
 }
 
@@ -720,7 +795,7 @@ form .formHeadings h4 {
 
   .footerParagraph {
     padding: 20px;
-    gap: 30px;
+    box-sizing: border-box;
   }
 
   form .contact-us-headline {
@@ -734,6 +809,25 @@ form .formHeadings h4 {
   #submitButtonForForm {
     width: 100%;
   }
+
+  .haveIdeaTagLine h5 {
+    font-size: 48px;
+  }
+
+  .haveIdeaTagLine {
+    padding: 20px; /* Add padding for consistent spacing */
+  }
+
+  .addressFooter {
+    padding: 20px; /* Add padding for consistent spacing */
+  }
+
+  .footerIcons {
+    padding: 20px; /* Add padding for consistent spacing */
+    box-sizing: border-box;
+  }
+}
+
 
   .haveIdeaTagLine h5 {
     font-size: 48px;
