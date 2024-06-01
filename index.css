@@ -7,7 +7,7 @@
 }
 
 /*preloader animation*/
-/* #preloader {
+ #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -92,7 +92,9 @@
   font-size: 1.2rem;
   margin-top: 1rem;
   text-align: center;
-} */
+} 
+
+
 
 .navbar {
   display: flex;
