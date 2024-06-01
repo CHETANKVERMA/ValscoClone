@@ -1,20 +1,20 @@
 // Function for loading animation
-// window.addEventListener("load", function () {
-//   const preloader = document.getElementById("preloader");
-//   const animationDuration = 3600; // Animation duration in milliseconds
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  const animationDuration = 3600; // Animation duration in milliseconds
 
-//   setTimeout(function () {
-//     preloader.style.display = "none";
-//   }, animationDuration);
+  setTimeout(function () {
+    preloader.style.display = "none";
+  }, animationDuration);
 
-//   // Check if the preloader should be shown based on session storage
-//   const shouldShowPreloader = sessionStorage.getItem("showPreloader");
-//   if (shouldShowPreloader === "false") {
-//     preloader.style.display = "none";
-//   } else {
-//     sessionStorage.setItem("showPreloader", "false");
-//   }
-// });
+  // Check if the preloader should be shown based on session storage
+  const shouldShowPreloader = sessionStorage.getItem("showPreloader");
+  if (shouldShowPreloader === "false") {
+    preloader.style.display = "none";
+  } else {
+    sessionStorage.setItem("showPreloader", "false");
+  }
+});
 
 // functions for button-scrolling to the rerquired page
 function scrollToSectionProducts() {
